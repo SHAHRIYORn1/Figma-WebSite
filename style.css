@@ -47,7 +47,7 @@ nav ul li a:hover {
     grid-template-columns: repeat(4, 1fr);
 }
 
-.infoAndImage > div {
+.infoAndImage  div {
     display: flex;
     flex-direction: column;
 }
@@ -207,7 +207,34 @@ footer nav ul li a {
         line-height: normal;
     }
 
+    .infoAndImage {
+        display: flex;
+        flex-direction: column;
+    }
+
   footer{
     display: none;
   }
+}
+
+@media (max-width: 1027px){
+    footer{
+        display: none;
+    }
+     .banner{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .banner div svg{
+    width: 600px;
+    margin-left: 10px;
+}
+
+   .banner .content{
+    width: 100%;
+    background-color: #EDEDED;
+    line-height: normal;
+}  
 }
